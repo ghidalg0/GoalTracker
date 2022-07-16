@@ -23,11 +23,9 @@ export const GoalInput = (props) => {
         <Image source={require("../assets/images/goal.png")} style={styles.image} />
         <TextInput
           placeholder='Your course goal'
-          placeholderTextColor="#fff"
           style={styles.textInput}
           onChangeText={goalInputHandler}
           value={goalText}
-          color="#fff"
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
@@ -56,14 +54,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 16,
-    backgroundColor: "#7b2cbf"
+    backgroundColor: "#7b2cbf",
   },
   textInput: {
     borderWidth: 1,
     borderColor: "#fff",
-    borderRadius: 4,
+    backgroundColor:"#fff",
+    borderRadius: 8,
     width: "100%",
-    padding: 8,
+    padding: 16,
   },
   buttonContainer: {
     marginTop: 16,
